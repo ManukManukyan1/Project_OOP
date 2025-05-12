@@ -36,20 +36,7 @@ public enum Building {
 
         return "<html>" + emoji + " " + name + "<br>" + costStr.toString().trim() + "</html>";
     }
-    public String getEffectDescription() {
-        return switch (this) {
-            case WOODENHOUSE -> "+3 Population";
-            case STONEHOUSE -> "+5 Population";
-            case WELL -> "+10% Food Production";
-            case MARKETPLACE -> "+15% Gold Production";
-            case LUMBERCAMP -> "+20% Wood Production";
-            case FARM -> "+2 Food/Turn, +10% Food";
-            case HUNTINGLODGE -> "+10% Food Production";
-            case IRONMINE -> "+15% Iron Production";
-            case GOLDMINE -> "+10% Gold Production";
-            case STONEMINE -> "+20% Stone Production";
-        };
-    }
+
 
 
     public int[] getCosts() { return costs; }
