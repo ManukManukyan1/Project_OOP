@@ -49,7 +49,6 @@ public class GameStart {
                 case 3:
                     s = map.fullString();
                     arr = s.split("%%");
-                    //citizen = new Citizen(citizen.getIdle(), map.getWorking());
                     map.printMap(citizen.getIdle(), citizen.getWorking());
                     break;
 
